@@ -1,0 +1,13 @@
+create database proyectoSemSoft;
+use proyectoSemSoft;
+CREATE TABLE `usuarios` (
+  `username` varchar(35) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`username`)
+);
+
+create table agenda(
+	fecha nvarchar(10),
+    actividad nvarchar(50),
+    descripcion nvarchar(50)
+); 
