@@ -27,9 +27,6 @@ var con = mysql.createPool({
     multipleStatements:true
 });
 
-
-
-//APIs CRUD para mantenimiento de Vehiculos
 router.get('/get_agenda', (req, res, next) => {
     var query = 'select * from agenda';
     con.query(query, (err, result, field) => {
